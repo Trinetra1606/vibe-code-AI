@@ -157,14 +157,3 @@ For detailed instructions on setting up authentication providers (Google, Linked
 - Push migrations (same as apply): `make db-push`
 
 See `supabase/README.md` for more details on database migrations.
-
-## Documentation
-
-- [Backend Documentation](./BACKEND-CONTEXT.md)
-- [Frontend Documentation](./FRONTEND-CONTEXT.md)
-- [Authentication Setup Guide](./AuthSetup.md)
-- [Future Improvements](./FutureImprovements.md)
-
-## License
-
-MIT
