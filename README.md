@@ -160,8 +160,8 @@ See `supabase/README.md` for more details on database migrations.
 
 ## Documentation
 
-- [Backend Documentation](./backend/BACKEND-CONTEXT.md)
-- [Frontend Documentation](./frontend/FRONTEND-CONTEXT.md)
+- [Backend Documentation](./BACKEND-CONTEXT.md)
+- [Frontend Documentation](./FRONTEND-CONTEXT.md)
 - [Authentication Setup Guide](./AuthSetup.md)
 - [Future Improvements](./FutureImprovements.md)
 
