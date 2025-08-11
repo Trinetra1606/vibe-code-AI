@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: read #This is required for actions/checkout
 
-  
+  step
       - uses: actions/checkout@v4
 
       - name: Set up Python version
@@ -60,6 +60,7 @@ jobs:
           slot-name: 'Production'
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A5676338E2B743D8B9180227038ED262 }}
+
 
 
 
