@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: read #This is required for actions/checkout
 
-  steps:
+    steps:
       - uses: actions/checkout@v4
 
       - name: Set up Python version
@@ -25,13 +25,13 @@ jobs:
           python-version: '3.9'
 
       - name: Create and start virtual environment
-        run: 
+        run: |
           python -m venv venv
           source venv/bin/activate
-          
-       - name: install dependencies
-          Run pip install -r requirements.txt
-             
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Upload artifact for deployment jobs
@@ -58,15 +58,4 @@ jobs:
         with:
           app-name: 'CTS-VibeAppca2714-4'
           slot-name: 'Production'
-
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A5676338E2B743D8B9180227038ED262 }}
-
-
-
-
-
-
-
-
-
-
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_030889ADAFF64039ABFA52E79F285691 }}
